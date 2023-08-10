@@ -4,17 +4,28 @@
 	ul {
 		display: flex;
 		justify-content: space-evenly;
+		height: 75px;
 
 		li {
 			position: relative;
-			display: inline-block;
-			margin-right: 10px;
+			display: flex;
+			align-items: center; 
+			padding: 15px;
+
+			&:hover {
+				background-color: #262a32;
+				border-bottom: 5px solid #84bc22;
+				
+				a {
+					color: #fff;
+				}
+			}
 
 			&:first-child::after {
 				content: '';
 				position: absolute;
 				top: 50%;
-				right: -15px;
+				right: 5px;
 				transform: translateY(-50%);
 				width: 0;
 				height: 0;
