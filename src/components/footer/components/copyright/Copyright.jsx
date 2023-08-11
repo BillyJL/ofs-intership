@@ -1,9 +1,11 @@
+import { getCurrentYear } from './helpers';
 import './Copyright.scss';
 
 const Copyright = ({ className }) => {
+	const currentYear = getCurrentYear();
 	return (
 		<div className={"copyright " + className}>
-			<p>© Copyright 2019.</p>
+			<p>© Copyright {currentYear}.</p>
 			<p>All Rights Reserved.</p>
 		</div>
 	);
