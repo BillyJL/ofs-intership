@@ -8,10 +8,14 @@ const IconBar = () => {
 	return (
 		<ul className="icon-bar">
 			<li>
-				<img src={search} alt="search" />
+				<div className="icon-wrapper">
+					<img src={search} alt="search" />
+				</div>
 			</li>
 			<li>
-				<img src={login} alt="login" />
+				<div className="icon-wrapper">
+					<img src={login} alt="login" />
+				</div>
 			</li>
 			<li>
 				<div className="icon-wrapper">

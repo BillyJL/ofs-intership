@@ -1,10 +1,24 @@
 .icon-bar {
 	display: flex;
+	height: 75px;
 	width: 15%;
 	justify-content: space-between;
 
 	li {
 		position: relative;
+		display: flex;
+		align-items: center;
+		padding: 0 10px;
+
+		&:hover {
+			background-color: #a4a9b3;
+			border-bottom: 3px solid #84bc22;
+
+			span {
+				color: #a1fe00;
+				border: 2px solid #a2ff00;
+			}
+		}
 	}
 
 	.icon-wrapper {
