@@ -1,7 +1,7 @@
-import facebook from '../../../../assets/images/facebook.svg';
-import google from '../../../../assets/images/google.svg';
-import twitter from '../../../../assets/images/icons8-twitter.svg';
-import pinterest from '../../../../assets/images/pinterest.svg';
+import facebook from '../../../../../../assets/images/facebook.svg';
+import google from '../../../../../../assets/images/google.svg';
+import twitter from '../../../../../../assets/images/icons8-twitter.svg';
+import pinterest from '../../../../../../assets/images/pinterest.svg';
 import './Icons.scss'
 
 

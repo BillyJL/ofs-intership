@@ -1,7 +1,7 @@
-import search from '../../../../assets/images/search.png';
-import login from '../../../../assets/images/login.png';
-import liked from '../../../../assets/images/liked.png';
-import cart from '../../../../assets/images/cart.png';
+import search from '../../../../../../assets/images/search.png';
+import login from '../../../../../../assets/images/login.png';
+import liked from '../../../../../../assets/images/liked.png';
+import cart from '../../../../../../assets/images/cart.png';
 import './IconBar.scss';
 
 const IconBar = () => {
