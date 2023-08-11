@@ -18,12 +18,21 @@
 	li {
 		position: relative;
 
+		&:hover {
+			background-color: #262a32;
+			border-bottom: 3px solid #84bc22;
+			
+			select {
+				color: #000
+			}
+		}
+
 		&:after {
 			content: '';
 			pointer-events: none;
 			position: absolute;
 			top: 50%;
-			right: -15px;
+			right: -10px;
 			transform: translateY(-50%);
 			width: 0;
 			height: 0;
