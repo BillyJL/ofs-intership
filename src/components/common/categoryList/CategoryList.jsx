@@ -5,7 +5,7 @@ const CategoryList = ({className, listOfCategories }) => {
 	return (
 		<ul className={'list ' + className}>
 			{listOfCategories.map((name, index) => (
-				<li className='list-point' key={index}>{name}</li>
+				<li key={index}>{name}</li>
 			))}
 		</ul>
 	);
