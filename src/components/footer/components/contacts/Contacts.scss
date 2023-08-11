@@ -1,0 +1,11 @@
+.contacts {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	.list-name {
+		color: #ffffff;
+		font-size: 14px;
+		font-weight: 800;
+		text-transform: uppercase;
+	}
+}
