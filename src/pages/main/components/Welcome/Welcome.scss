@@ -1,0 +1,13 @@
+.welcome {
+	background-color: #fff;
+	padding: 20px 55px;
+
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	grid-template-rows: 1fr;
+	grid-column-gap: 30px;
+	grid-row-gap: 0px;
+
+	.div1 { grid-area: 1 / 1 / 2 / 2; }
+	.div2 { grid-area: 1 / 2 / 2 / 3; }
+}
