@@ -1,0 +1,41 @@
+.slide {
+	background-image: url('../../../../../../../../../../../../assets//images/Layer_3.png');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 80px 60px 80px 60px;
+
+	.headline {
+		color: #ffffff;
+		font-family: 'Myriad Pro';
+		font-size: 48px;
+		font-weight: 700;
+		margin-bottom: 80px;
+		max-width: 60%;
+	}
+
+	&-text {
+		color: #ffffff;
+		font-family: 'Myriad Pro';
+		font-size: 14px;
+		font-weight: 400;
+		max-width: 35%;
+		margin-bottom: 40px;
+	}
+
+	&-button {
+		background-color: transparent;
+		border-radius: 28px;
+		border: 1px solid #ffffff;
+		color: #ffffff;
+		font-size: 14px;
+		padding: 10px 20px;
+		text-transform: uppercase;
+		cursor:pointer;
+
+		&:hover {
+			background-color: #1e1d22;
+			opacity: 0.5;
+		}
+	}
+}
