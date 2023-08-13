@@ -1,3 +1,4 @@
+import Button from '../../../../../../../../../../../../components/common/Button/Button';
 import './Slide.scss';
 
 const Slide = ({ headline, text }) => {
@@ -5,7 +6,7 @@ const Slide = ({ headline, text }) => {
 		<div className="embla__slide slide">
 			<h1 className="headline">{headline}</h1>
 			<p className="slide-text">{text}</p>
-			<button className="slide-button">view more</button>
+			<Button className="slide-button" text={'view more'} />
 		</div>
 	);
 };
