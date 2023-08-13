@@ -1,0 +1,55 @@
+.banner {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	align-items: center;
+
+	&-text {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		text-align: center;
+		margin: 0 37px;
+
+		.headline {
+			color: #45413e;
+			font-size: 18px;
+			font-weight: 400;
+		}
+
+		.text {
+			color: #45413e;
+			font-family: 'Myriad Pro';
+			font-size: 13px;
+			font-weight: 400;
+		}
+	}
+
+	&-button {
+		display: flex;
+		justify-content: center;
+		background-color: transparent;
+		border-radius: 28px;
+		width: 50%;
+		border: 1px solid #3a5b96;
+		color: #3a5b96;
+		font-size: 14px;
+		padding: 5px 15px;
+		text-transform: uppercase;
+		cursor: pointer;
+
+		&:hover {
+			background-color: #1e1d22;
+			opacity: 0.5;
+		}
+
+		&::before {
+			content: '';
+			width: 20px;
+			height: 20px;
+			background: url('../../../../../../assets/images/icons8-facebook-blue.svg') no-repeat;
+			background-size: cover;
+			margin-right: 5px;
+		}
+	}
+}
