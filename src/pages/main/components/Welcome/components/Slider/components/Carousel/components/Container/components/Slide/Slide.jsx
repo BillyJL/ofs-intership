@@ -1,4 +1,4 @@
-import Button from '../../../../../../../../../../../../components/common/Button/Button';
+import Button from '@components/common/Button/Button';
 import './Slide.scss';
 
 const Slide = ({ headline, text, img, textAlign }) => {

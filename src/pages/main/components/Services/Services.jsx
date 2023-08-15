@@ -1,5 +1,5 @@
 import './Services.scss';
-import { clientConfig } from '../../../../config/client';
+import { clientConfig } from '@config/client';
 import Slogan from './components/Slogan/Slogan';
 
 const Services = () => {

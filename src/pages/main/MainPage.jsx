@@ -1,9 +1,14 @@
-import { withLayout } from "../../components/layouts"
+import { withLayout } from '@components/layouts';
+import Services from './components/Services/Services';
+import Welcome from './components/Welcome/Welcome';
 
 const MainPage = () => {
-	return(
-		<h1>Test</h1>
-	)
-}
+	return (
+		<>
+			<Welcome />
+			<Services />
+		</>
+	);
+};
 
 export default withLayout(MainPage);

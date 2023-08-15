@@ -1,4 +1,4 @@
-import { clientConfig } from '../../../../../../../../../../config/client';
+import { clientConfig } from '@config/client';
 import Slide from './components/Slide/Slide';
 
 const Container = ({ emblaRef, slides }) => {

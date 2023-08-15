@@ -1,5 +1,5 @@
-import CategoryList from "../../../../../../common/categoryList/CategoryList";
-import image from '../../../../../../../assets/images/nav-photo.png';
+import CategoryList from "@components/common/categoryList/CategoryList";
+import image from '@images/nav-photo.png';
 
 const Popover = () => {
 	const firstList = ['Accessories', 'Alcohol', 'Art', 'Books', 'Drink', 'Electronics', 'Flowers & Plants', 'Food']

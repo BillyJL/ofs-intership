@@ -1,6 +1,6 @@
 import Sales from './components/Sales/Sales';
 import './Banner.scss';
-import Button from '../../../../../../components/common/Button/Button';
+import Button from '@components/common/Button/Button';
 
 const Banner = () => {
 	return (
