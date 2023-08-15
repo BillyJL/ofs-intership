@@ -1,7 +1,9 @@
 import delivery from '../assets/images/Delivery_Packages.png';
 import triangular from '../assets/images/Triangular_Arrows.png';
 import clipboard from '../assets/images/Clipboard_Verification.png';
-import sliderBack1 from '../assets/images/Layer_3.png'
+import sliderBack1 from '../assets/images/Layer_3.png';
+import sliderBack2 from '../assets/images/layer_2.jpg';
+import sliderBack3 from '../assets/images/layer_1.jpg';
 
 
 export const clientConfig = {
@@ -34,13 +36,13 @@ export const clientConfig = {
 			{
 				headline: 'Control and manage any device with cloud solutions',
 				text: 'Improve business performance and the user experience with the right mix of IoT technology and processes',
-				img: sliderBack1,
+				img: sliderBack2,
 				textAlign: '-webkit-center'
 			},
 			{
 				headline: 'Control and manage any device with cloud solutions',
 				text: 'Improve business performance and the user experience with the right mix of IoT technology and processes',
-				img: sliderBack1,
+				img: sliderBack3,
 				textAlign: '-webkit-right'
 			},
 		]
