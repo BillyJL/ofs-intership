@@ -1,0 +1,65 @@
+.card {
+	position: relative;
+	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	border-radius: 10px;
+	padding-bottom: 20px;
+	overflow: hidden;
+
+	&-image {
+		max-width: 100%;
+		height: auto;
+	}
+
+	&-name {
+		color: #45413e;
+		font-size: 16px;
+		font-weight: 400;
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	&-price {
+		color: #45413e;
+		font-size: 14px;
+		font-weight: 400;
+		text-align: center;
+	}
+
+	&-gradient {
+		position: absolute;
+		display: none;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-image: linear-gradient(to top, #1cc167 0%, #2ed3a2 100%);
+		opacity: 0;
+		pointer-events: none;
+
+		&-button {
+			background-color: #ffffff;
+			border-radius: 50%;
+			width: 90px;
+			height: 90px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border: none;
+			color: #3a5b96;
+			font-size: 40px;
+			cursor: pointer;
+			transition: background-color 0.3s, color 0.3s;
+		}
+	}
+
+	&:hover > &-gradient {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		opacity: 0.9;
+	}
+}
