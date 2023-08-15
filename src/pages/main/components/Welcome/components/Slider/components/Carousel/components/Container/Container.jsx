@@ -1,13 +1,16 @@
+import { clientConfig } from '../../../../../../../../../../config/client';
 import Slide from './components/Slide/Slide';
 
 const Container = ({ emblaRef, slides }) => {
+	const {
+		welcome: { slider },
+	} = clientConfig;
 	return (
 		<div className="embla__viewport" ref={emblaRef}>
 			<div className="embla__container">
-				{slides.map((slideInfo) => (
+				{slider.map((item) => (
 					<Slide
-						headline={slideInfo.headline}
-						text={slideInfo.text}
+						{...item}
 					/>
 				))}
 			</div>
