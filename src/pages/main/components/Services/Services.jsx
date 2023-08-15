@@ -1,8 +1,9 @@
 import './Services.scss';
-import { slogansList } from '../../../../config/client';
+import { clientConfig } from '../../../../config/client';
 import Slogan from './components/Slogan/Slogan';
 
 const Services = () => {
+	const { slogansList } = clientConfig;
 	return (
 		<div className="services">
 			{slogansList.map((item) => (
