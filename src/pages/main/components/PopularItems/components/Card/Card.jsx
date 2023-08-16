@@ -1,4 +1,6 @@
 import img from '@images/popular-item.png';
+import plusIcon from '@images/Plus.png';
+import heartIcon from '@images/Heart.png';
 import './Card.scss';
 
 const Card = () => {
@@ -10,8 +12,12 @@ const Card = () => {
 			</h3>
 			<p className="card-price">$ 799.55</p>
 			<div className='card-gradient'>
-				<button className='card-gradient-button'>+</button>
-				<button className='card-gradient-button'>&#9829;</button>
+				<button className='card-gradient-button'>
+					<img src={plusIcon} alt="Plus Icon" />
+				</button>
+				<button className='card-gradient-button'>
+					<img src={heartIcon} alt="Heart Icon" />
+				</button>
 			</div>
 		</div>
 	);
