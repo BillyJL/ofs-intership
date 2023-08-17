@@ -1,0 +1,119 @@
+.message {
+	position: relative;
+	display: flex;
+	flex-direction: column-reverse;
+	width: 258px;
+	height: 276px;
+	border-radius: 10px;
+	background: url('../../../../../../assets/images/Layer_149.png');
+	background-size: cover;
+	padding: 40px 30px;
+	z-index: 0;
+
+	&-content {
+		display: grid;
+		grid-template-columns: 1.5fr repeat(2, 1fr);
+		grid-template-rows: 3fr 1fr;
+		grid-column-gap: 0px;
+		grid-row-gap: 0px;
+		z-index: 1;
+
+		&-text {
+			color: #ffffff;
+			.message {
+				position: relative;
+				width: 258px;
+				height: 276px;
+				border-radius: 10px;
+				background: url('../../../../../../assets/images/Layer_149.png');
+				background-size: cover;
+				padding: 40px 30px;
+				z-index: 0;
+
+				&-content {
+					display: grid;
+					grid-template-columns: 1.5fr repeat(2, 1fr);
+					grid-template-rows: 1fr 3fr; /* Зміни відповідно до нового розташування */
+					grid-column-gap: 0px;
+					grid-row-gap: 0px;
+					z-index: 1;
+
+					&-text {
+						color: #ffffff;
+						font-size: 16px;
+						line-height: 24px;
+						max-width: 130px;
+					}
+
+					&-time {
+						color: #ffffff;
+						font-size: 14px;
+						font-weight: 400;
+						text-transform: uppercase;
+					}
+
+					.div1 {
+						grid-area: 2 / 1 / 3 / 4; /* Зміни координати для нового розташування */
+					}
+
+					.div2 {
+						display: flex;
+						gap: 15px;
+						align-items: flex-end; /* Зміни вирівнювання вниз */
+						grid-area: 1 / 1 / 2 / 4; /* Зміни координати для нового розташування */
+					}
+				}
+
+				&::before {
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					z-index: -1;
+					width: 100%;
+					height: 100%;
+					border-radius: 10px;
+					background-image: linear-gradient(
+						to top,
+						#675b99 0%,
+						#dc5987 100%
+					);
+					opacity: 0.8;
+				}
+			}
+
+			font-size: 16px;
+			line-height: 24px;
+			max-width: 130px;
+		}
+
+		&-time {
+			color: #ffffff;
+			font-size: 14px;
+			font-weight: 400;
+			text-transform: uppercase;
+		}
+
+		.div1 {
+			grid-area: 1 / 1 / 2 / 4;
+		}
+		.div2 {
+			display: flex;
+			gap: 15px;
+			grid-area: 2 / 1 / 3 / 2;
+		}
+	}
+
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		width: 100%;
+		height: 100%;
+		border-radius: 10px;
+		background-image: linear-gradient(to top, #675b99 0%, #dc5987 100%);
+		opacity: 0.8;
+	}
+}
