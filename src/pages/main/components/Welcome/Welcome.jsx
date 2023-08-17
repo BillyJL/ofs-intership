@@ -1,11 +1,11 @@
-import Slider from './components/Slider/Slider';
+import Carousel from './components/Carousel/Carousel';
 import Banner from './components/Banner/Banner';
 import './Welcome.scss';
 
 const Welcome = () => {
 	return (
 		<div className='welcome'>
-			<Slider />
+			<Carousel />
 			<Banner />
 		</div>
 	);

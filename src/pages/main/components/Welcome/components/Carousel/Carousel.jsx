@@ -1,15 +1,16 @@
 import useEmblaCarousel from 'embla-carousel-react';
-
 import Autoplay from 'embla-carousel-autoplay';
-import Dots from './components/Dots/Dots';
+import Dots from './/components/Dots/Dots';
 import Container from './components/Container/Container';
+import './Carousel.scss'
 
-const Carousel = ({ slides, options }) => {
+const Carousel = () => {
+	const options = { loop: true };
 	const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
 	return (
 		<div className="carousel div1">
-			<Container emblaRef={emblaRef} slides={slides} />
+			<Container emblaRef={emblaRef} />
 			<Dots emblaApi={emblaApi} />
 		</div>
 	);
