@@ -6,7 +6,8 @@
 			"@pages": ["./pages"],
 			"@assets": ["./assets"],
 			"@images": ["./assets/images"],
-			"@config": ["./config"]
+			"@config": ["./config"],
+			"@hooks": ["./hooks"]
 		}
 	},
 	"exclude": ["node_modules"]
