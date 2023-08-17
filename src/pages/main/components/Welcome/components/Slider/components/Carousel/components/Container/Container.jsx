@@ -6,8 +6,8 @@ const Container = ({ emblaRef, slides }) => {
 		welcome: { slider },
 	} = clientConfig;
 	return (
-		<div className="embla__viewport" ref={emblaRef}>
-			<div className="embla__container">
+		<div className="carousel__viewport" ref={emblaRef}>
+			<div className="carousel__container">
 				{slider.map((item) => (
 					<Slide
 						{...item}

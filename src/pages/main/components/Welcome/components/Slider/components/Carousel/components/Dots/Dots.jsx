@@ -14,13 +14,13 @@ const Dots = ({ emblaApi }) => {
 	);
 
 	return(
-		<div className="embla__dots">
+		<div className="carousel__dots">
 			{scrollSnaps.map((_, index) => (
 				<DotButton
 					key={index}
 					onClick={() => onDotButtonClick(index)}
-					className={'embla__dot'.concat(
-						index === selectedIndex ? ' embla__dot--selected' : '',
+					className={'carousel__dot'.concat(
+						index === selectedIndex ? ' carousel__dot--selected' : '',
 					)}
 				/>
 			))}
