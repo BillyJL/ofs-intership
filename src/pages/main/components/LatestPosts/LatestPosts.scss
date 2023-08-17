@@ -1,0 +1,28 @@
+.posts {
+	padding: 45px 55px 65px 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 45px;
+
+	&-header {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		text-align: center;
+
+		&-headline {
+			color: #ffffff;
+			font-size: 36px;
+			font-weight: 700;
+			font-style: normal;
+			letter-spacing: normal;
+			line-height: normal;
+		}
+
+		&-text {
+			color: #ffffff;
+			font-size: 18px;
+		}
+	}
+}

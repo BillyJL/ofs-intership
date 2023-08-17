@@ -3,6 +3,7 @@ import Services from './components/Services/Services';
 import Welcome from './components/Welcome/Welcome';
 import Banner from './components/Banner/Banner';
 import PopularItems from './components/PopularItems/PopularItems';
+import LatestPosts from './components/LatestPosts/LatestPosts';
 
 const MainPage = () => {
 	return (
@@ -10,6 +11,7 @@ const MainPage = () => {
 			<Welcome />
 			<PopularItems />
 			<Banner />
+			<LatestPosts />
 			<Services />
 		</>
 	);
