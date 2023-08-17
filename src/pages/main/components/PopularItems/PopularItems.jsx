@@ -2,6 +2,8 @@ import './PopularItems.scss';
 import Card from './components/Card/Card';
 
 const PopularItems = () => {
+	const [cardItems, setCardItems] = useState([]);
+	const [isLoadedCards, setIsLoadedCards] = useState(false);
 	return (
 		<div className="popularItems">
 			<div class="headline">
