@@ -4,6 +4,10 @@ import clipboard from '@images/Clipboard_Verification.png';
 import sliderBack1 from '@images/Layer_3.png';
 import sliderBack2 from '@images/layer_2.jpg';
 import sliderBack3 from '@images/layer_1.jpg';
+import latestPost1 from '@images/latestPost1.png';
+import latestPost2 from '@images/latestPost2.png';
+import latestPost3 from '@images/latestPost3.png';
+import latestPost4 from '@images/latestPost4.png';
 
 
 export const clientConfig = {
@@ -53,5 +57,35 @@ export const clientConfig = {
 		endpoints: {
 			request: '/items'
 		}
+	},
+
+	latestPosts: {
+		slider: [
+			{
+				headline: "Kristina Dam Oak Table With White Marble",
+				theme: "Awesome",
+				image: latestPost1
+			},
+			{
+				headline: "Kristina Dam Oak Table With White Marble",
+				theme: "Marketing",
+				image: latestPost2
+			},
+			{
+				headline: "Kristina Dam Oak Table With White Marble",
+				theme: "Awesome",
+				image: latestPost3
+			},
+			{
+				headline: "Kristina Dam Oak Table With White Marble",
+				theme: "Marketing",
+				image: latestPost4
+			},
+			{
+				headline: "Kristina Dam Oak Table With White Marble",
+				theme: "Awesome",
+				image: latestPost3
+			},
+		]
 	}
 }
