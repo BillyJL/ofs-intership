@@ -46,5 +46,12 @@ export const clientConfig = {
 				textAlign: '-webkit-right'
 			},
 		]
+	},
+
+	server: {
+		domain: process.env.REACT_APP_DOMAIN_URL,
+		endpoints: {
+			request: '/items'
+		}
 	}
 }
