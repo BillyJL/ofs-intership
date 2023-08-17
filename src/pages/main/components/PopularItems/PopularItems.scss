@@ -22,6 +22,24 @@
 		}
 	}
 
+	.load {
+		position: relative;
+		width: 25%;
+		margin: 0 auto;
+
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			right: 50px;
+			transform: translateY(-50%);
+			background-image: url('../../../../assets/images/spiner_icon.png');
+			background-size: contain;
+			width: 20px;
+			height: 15px;
+		  }
+	}
+
 	.items {
 		&-wrapper {
 			display: grid;
