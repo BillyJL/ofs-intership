@@ -7,7 +7,7 @@ const Slide = ({ headline, theme, image }) => {
 			<div className='slider-slide-content'>
 				<img className="slider-slide-image" src={image} alt="headline" />
 				<h3 className="slider-slide-headline">{headline}</h3>
-				<p className="theme">{theme}</p>
+				<p className="slider-slide-theme">{theme}</p>
 			</div>
 		</div>
 	);
