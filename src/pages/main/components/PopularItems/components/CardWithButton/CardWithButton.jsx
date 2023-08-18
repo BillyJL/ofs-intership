@@ -1,7 +1,11 @@
 import image from '@images/Layer_152.png';
 import './CardWithButton.scss';
+import { cartSlice } from 'store/reducers/CartSlice';
+import { useDispatch } from 'react-redux';
 
 const CardWithButton = () => {
+	const { numOfProductIncrement } = cartSlice.actions;
+	const dispatch = useDispatch();
 	return (
 		<div className="button-card">
 			<div className="button-card-content">
@@ -9,7 +13,7 @@ const CardWithButton = () => {
 				<h3 className="button-card-name">Hay - About A Lounge Chair AAL 93</h3>
 				<div className='multi-button'>
 					<span>$659.55</span>
-					<button>Buy now</button>
+					<button onClick={() => dispatch(numOfProductIncrement(1))}>Buy now</button>
 				</div>
 			</div>
 		</div>
