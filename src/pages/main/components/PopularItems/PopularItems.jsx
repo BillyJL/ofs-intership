@@ -8,9 +8,8 @@ import Button from 'components/common/Button/Button';
 import './PopularItems.scss';
 
 const PopularItems = () => {
-	const [cardItems, setCardItems] = useState([]);
 	const [isLoadedCards, setIsLoadedCards] = useState(false);
-	usePopularItem(setCardItems);
+	const { cardItems } = usePopularItem();
 
 	return (
 		<div className="popularItems">
