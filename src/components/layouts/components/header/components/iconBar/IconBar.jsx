@@ -3,8 +3,11 @@ import login from '@images/login.png';
 import liked from '@images/liked.png';
 import cart from '@images/cart.png';
 import './IconBar.scss';
+import { useSelector } from 'react-redux';
 
 const IconBar = () => {
+	const { numberOfProducts } = useSelector((state) => state.cartReducer);
+	const { numberOfLiked } = useSelector((state) => state.likedReducer);
 	return (
 		<ul className="icon-bar">
 			<li>
@@ -20,13 +23,13 @@ const IconBar = () => {
 			<li>
 				<div className="icon-wrapper">
 					<img src={liked} alt="liked" />
-					<span>1</span>
+					<span>{numberOfLiked}</span>
 				</div>
 			</li>
 			<li>
 				<div className="icon-wrapper">
 					<img src={cart} alt="cart" />
-					<span>2</span>
+					<span>{numberOfProducts}</span>
 				</div>
 			</li>
 		</ul>
