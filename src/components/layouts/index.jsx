@@ -1,5 +1,6 @@
 import Header from './components/header/Header.jsx';
 import Footer from './components/footer/Footer.jsx';
+import CookiePolicyModal from './components/CookiePolicyModal/CookiePolicyModal.jsx';
 
 const Layout = ({ children }) => {
 	return (
@@ -7,6 +8,7 @@ const Layout = ({ children }) => {
 			<Header />
 			<main>{children}</main>
 			<Footer />
+			<CookiePolicyModal />
 		</>
 	);
 };
