@@ -3,9 +3,12 @@ import login from '@images/login.png';
 import liked from '@images/liked.png';
 import cart from '@images/cart.png';
 import './IconBar.scss';
+import { useState } from 'react';
 import { useSelector } from 'react-redux';
+import LoginModal from './components/LoginModal';
 
 const IconBar = () => {
+	const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
 	const { numberOfProducts } = useSelector((state) => state.cartReducer);
 	const { numberOfLiked } = useSelector((state) => state.likedReducer);
 	return (
@@ -15,9 +18,10 @@ const IconBar = () => {
 					<img src={search} alt="search" />
 				</div>
 			</li>
-			<li>
+			<li onClick={() => setIsLoginModalOpen(true)}>
 				<div className="icon-wrapper">
 					<img src={login} alt="login" />
+					{isLoginModalOpen && <LoginModal onClose={() => setIsLoginModalOpen(false)} />}
 				</div>
 			</li>
 			<li>
