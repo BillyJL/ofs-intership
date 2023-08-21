@@ -1,4 +1,5 @@
 import { withLayout } from '@components/layouts';
+import { Link } from 'react-router-dom';
 import './NotFound.scss';
 
 const NotFound = () => {
@@ -19,7 +20,7 @@ const NotFound = () => {
 					Aenean commodo ligula eget dolor. Aenean massa.
 				</p>
 			</div>
-			<span className="notfound-back div3">Go back to Homepage</span>
+			<Link className="notfound-back div3">Go back to Homepage</Link>
 			<form className="notfound-search div4">
 				<form className="notfound-search div4">
 					<h2>Search our site</h2>
