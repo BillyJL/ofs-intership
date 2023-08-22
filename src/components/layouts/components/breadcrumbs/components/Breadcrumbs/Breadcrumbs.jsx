@@ -2,15 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import useBreadcrumbs from 'use-react-router-breadcrumbs';
 import './Breadcrumbs.scss';
+import { routes } from 'config/routes';
 
 const Breadcrumbs = () => {
-	const breadcrumbs = useBreadcrumbs();
+	const breadcrumbs = useBreadcrumbs(routes);
 	return (
 		<div className="title">
 			<ul className='breadcrumbs'>
 				{breadcrumbs.map(({ match, breadcrumb }, index) => (
 					<React.Fragment key={match.pathname}>
-					{index !== 0 && <span>/</span>}
 					{index !== breadcrumbs.length - 1 ? (
 						<Link to={match.pathname}>
 							{breadcrumb}
@@ -18,6 +18,7 @@ const Breadcrumbs = () => {
 					) : (
 						<span>{breadcrumb}</span>
 					)}
+					{index < breadcrumbs.length - 1 && "/"}
 				</React.Fragment>
 				))}
 			</ul>
