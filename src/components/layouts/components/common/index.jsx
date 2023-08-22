@@ -2,7 +2,7 @@ import Header from './components/header/Header.jsx';
 import Footer from './components/footer/Footer.jsx';
 import CookiePolicyModal from './components/CookiePolicyModal/CookiePolicyModal.jsx';
 
-const Layout = ({ children }) => {
+export const Layout = ({ children }) => {
 	return (
 		<>
 			<Header />
@@ -13,12 +13,14 @@ const Layout = ({ children }) => {
 	);
 };
 
-export const withLayout = (Component) => {
-	return function withLayoutComponent(props) {
-		return (
-			<Layout>
-				<Component {...props} />
-			</Layout>
-		);
+export const createLayoutHoc = (Layout) => {
+	return function withLayout(Component) {
+		return function withLayoutComponent(props) {
+			return (
+				<Layout>
+					<Component {...props} />
+				</Layout>
+			);
+		};
 	};
 };
