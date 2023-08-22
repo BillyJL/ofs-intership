@@ -1,4 +1,4 @@
-import { withLayout } from '@components/layouts';
+import { withMainLayout } from 'components/layouts';
 import Services from './components/Services/Services';
 import Welcome from './components/Welcome/Welcome';
 import Banner from './components/Banner/Banner';
@@ -17,4 +17,4 @@ const MainPage = () => {
 	);
 };
 
-export default withLayout(MainPage);
+export default withMainLayout(MainPage);

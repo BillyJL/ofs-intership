@@ -1,12 +1,9 @@
-import { withLayout } from '@components/layouts';
+import { withBreadcrumbsLayout } from '@components/layouts';
 import { Link } from 'react-router-dom';
 import './NotFound.scss';
-import Breadcrumbs from './components/Breadcrumbs/Breadcrumbs';
 
 const NotFound = () => {
 	return (
-		<>
-		<Breadcrumbs />
 		<div className="notfound">
 			<h1 className="div1">Oops!</h1>
 			<div className="notfound-message div2">
@@ -34,8 +31,7 @@ const NotFound = () => {
 				</form>
 			</form>
 		</div>
-		</>
 	);
 };
 
-export default withLayout(NotFound);
+export default withBreadcrumbsLayout(NotFound);
