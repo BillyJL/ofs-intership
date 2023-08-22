@@ -27,6 +27,7 @@ const LoginModal = ({ onClose }) => {
 
 	const handleOverlayClick = (e) => {
 		if (e.target.classList.contains('modal-overlay')) {
+			e.stopPropagation()
 			onClose();
 		}
 	};
