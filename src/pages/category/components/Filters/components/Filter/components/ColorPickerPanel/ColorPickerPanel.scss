@@ -1,0 +1,21 @@
+.color-picker-panel {
+	display: flex;
+
+	.color-option {
+		width: 15px;
+		height: 15px;
+		border-radius: 100%;
+		margin-right: 10px;
+		cursor: pointer;
+		border: 2.5px solid transparent;
+		transition: border-color 0.3s ease-in-out;
+
+		&:hover {
+			border-color: #45413e;
+		}
+
+		&.selected {
+			border-color: #45413e;
+		}
+	}
+}
