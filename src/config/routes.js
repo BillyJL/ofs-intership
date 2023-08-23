@@ -9,12 +9,12 @@ export const routes = [
 		breadcrumb: 'Home'
 	},
 	{
-		path: '/404',
-		element: <NotFound />,
-	},
-	{
 		path: '/category',
 		element: <CategoryPage />,
 		breadcrumb: 'Category Landing Services',
+	},
+	{
+		path: '*',
+		element: <NotFound />,
 	},
 ];
