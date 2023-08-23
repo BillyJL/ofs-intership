@@ -1,4 +1,13 @@
 .category {
 	padding: 0 55px 40px 55px;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	text-align: center;
 	border: 2px solid blue;
+
+	.results-num {
+		color: #45413e;
+		font-size: 14px;
+	}
 }
