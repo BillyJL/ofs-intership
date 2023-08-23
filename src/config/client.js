@@ -8,6 +8,14 @@ import latestPost1 from '@images/latestPost1.png';
 import latestPost2 from '@images/latestPost2.png';
 import latestPost3 from '@images/latestPost3.png';
 import latestPost4 from '@images/latestPost4.png';
+import productImg1 from '@images/PG.10216885.JJ169XX.PZ.jpg';
+import productImg1Small from '@images/PG.10216885.JJ169XX.PZ-small.jpg';
+import productImg2 from '@images/PG.10216885.JJ169XX.BZ.jpg';
+import productImg2Small from '@images/PG.10216885.JJ169XX.BZ-small.jpg';
+import productImg3 from '@images/PG.10216885.JJ8UTXX.PZ.jpg';
+import productImg3Small from '@images/PG.10216885.JJ8UTXX.PZ-small.jpg';
+import productImg4 from '@images/PG.10216885.JJ8UTXX.BZ.jpg';
+import productImg4Small from '@images/PG.10216885.JJ8UTXX.BZ-small.jpg';
 
 export const clientConfig = {
 	slogansList: [
@@ -235,6 +243,30 @@ export const clientConfig = {
 				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
 				price: '$ 799.55',
 				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+		],
+	},
+	product: {
+		images: [
+			{
+				original: productImg1,
+				thumbnail: productImg1Small,
+				originalHeight: '570px',
+			},
+			{
+				original: productImg2,
+				thumbnail: productImg2Small,
+				originalHeight: '570px',
+			},
+			{
+				original: productImg3,
+				thumbnail: productImg3Small,
+				originalHeight: '570px',
+			},
+			{
+				original: productImg4,
+				thumbnail: productImg4Small,
+				originalHeight: '570px',
 			},
 		],
 	},
