@@ -9,7 +9,6 @@ import latestPost2 from '@images/latestPost2.png';
 import latestPost3 from '@images/latestPost3.png';
 import latestPost4 from '@images/latestPost4.png';
 
-
 export const clientConfig = {
 	slogansList: [
 		{
@@ -35,57 +34,103 @@ export const clientConfig = {
 				headline: 'Control and manage any device with cloud solutions',
 				text: 'Improve business performance and the user experience with the right mix of IoT technology and processes',
 				img: sliderBack1,
-				textAlign: '-webkit-left'
+				textAlign: '-webkit-left',
 			},
 			{
 				headline: 'Control and manage any device with cloud solutions',
 				text: 'Improve business performance and the user experience with the right mix of IoT technology and processes',
 				img: sliderBack2,
-				textAlign: '-webkit-center'
+				textAlign: '-webkit-center',
 			},
 			{
 				headline: 'Control and manage any device with cloud solutions',
 				text: 'Improve business performance and the user experience with the right mix of IoT technology and processes',
 				img: sliderBack3,
-				textAlign: '-webkit-right'
+				textAlign: '-webkit-right',
 			},
-		]
+		],
 	},
 
 	server: {
 		domain: process.env.REACT_APP_DOMAIN_URL,
 		endpoints: {
-			request: '/items'
-		}
+			request: '/items',
+		},
 	},
 
 	latestPosts: {
 		slider: [
 			{
-				headline: "Kristina Dam Oak Table With White Marble",
-				theme: "Awesome",
-				image: latestPost1
+				headline: 'Kristina Dam Oak Table With White Marble',
+				theme: 'Awesome',
+				image: latestPost1,
 			},
 			{
-				headline: "Kristina Dam Oak Table With White Marble",
-				theme: "Marketing",
-				image: latestPost2
+				headline: 'Kristina Dam Oak Table With White Marble',
+				theme: 'Marketing',
+				image: latestPost2,
 			},
 			{
-				headline: "Kristina Dam Oak Table With White Marble",
-				theme: "Awesome",
-				image: latestPost3
+				headline: 'Kristina Dam Oak Table With White Marble',
+				theme: 'Awesome',
+				image: latestPost3,
 			},
 			{
-				headline: "Kristina Dam Oak Table With White Marble",
-				theme: "Marketing",
-				image: latestPost4
+				headline: 'Kristina Dam Oak Table With White Marble',
+				theme: 'Marketing',
+				image: latestPost4,
 			},
 			{
-				headline: "Kristina Dam Oak Table With White Marble",
-				theme: "Awesome",
-				image: latestPost3
+				headline: 'Kristina Dam Oak Table With White Marble',
+				theme: 'Awesome',
+				image: latestPost3,
 			},
-		]
-	}
-}
+		],
+	},
+
+	filters: [
+		{
+			label: 'Price',
+			type: 'dropdown',
+			options: [
+				'$0.00 - $100.00',
+				'$100.00 - $1000.00',
+				'$1000.00 - $10000.00',
+			],
+		},
+		{
+			label: 'Brands',
+			type: 'dropdown',
+			options: ['Ukraine sport', 'Nike', 'Puma', 'Adidas'],
+		},
+		{
+			label: 'Size',
+			type: 'dropdown',
+			options: ['Small', 'Average', 'Big'],
+		},
+		{
+			label: 'Color',
+			type: 'color',
+			options: [
+				'#ffffff',
+				'#43c0cf',
+				'#3d402f',
+				'#4aaf00',
+				'#315bbd',
+				'#ec6115',
+				'#dc041d',
+				'#efead7',
+			],
+		},
+		{
+			label: 'Sort by',
+			type: 'dropdown',
+			options: ['Price', 'Size', 'Brands'],
+		},
+		{
+			label: 'Show',
+			type: 'dropdown',
+			options: ['16 per page', '32 per page'],
+		},
+	],
+};
