@@ -88,49 +88,154 @@ export const clientConfig = {
 		],
 	},
 
-	filters: [
-		{
-			label: 'Price',
-			type: 'dropdown',
-			options: [
-				'$0.00 - $100.00',
-				'$100.00 - $1000.00',
-				'$1000.00 - $10000.00',
-			],
-		},
-		{
-			label: 'Brands',
-			type: 'dropdown',
-			options: ['Ukraine sport', 'Nike', 'Puma', 'Adidas'],
-		},
-		{
-			label: 'Size',
-			type: 'dropdown',
-			options: ['Small', 'Average', 'Big'],
-		},
-		{
-			label: 'Color',
-			type: 'color',
-			options: [
-				'#ffffff',
-				'#43c0cf',
-				'#3d402f',
-				'#4aaf00',
-				'#315bbd',
-				'#ec6115',
-				'#dc041d',
-				'#efead7',
-			],
-		},
-		{
-			label: 'Sort by',
-			type: 'dropdown',
-			options: ['Price', 'Size', 'Brands'],
-		},
-		{
-			label: 'Show',
-			type: 'dropdown',
-			options: ['16 per page', '32 per page'],
-		},
-	],
+	category: {
+		filters: [
+			{
+				label: 'Price',
+				type: 'dropdown',
+				options: [
+					'$0.00 - $100.00',
+					'$100.00 - $1000.00',
+					'$1000.00 - $10000.00',
+				],
+			},
+			{
+				label: 'Brands',
+				type: 'dropdown',
+				options: ['Ukraine sport', 'Nike', 'Puma', 'Adidas'],
+			},
+			{
+				label: 'Size',
+				type: 'dropdown',
+				options: ['Small', 'Average', 'Big'],
+			},
+			{
+				label: 'Color',
+				type: 'color',
+				options: [
+					'#ffffff',
+					'#43c0cf',
+					'#3d402f',
+					'#4aaf00',
+					'#315bbd',
+					'#ec6115',
+					'#dc041d',
+					'#efead7',
+				],
+			},
+			{
+				label: 'Sort by',
+				type: 'dropdown',
+				options: ['Price', 'Size', 'Brands'],
+			},
+			{
+				label: 'Show',
+				type: 'dropdown',
+				options: ['16 per page', '32 per page'],
+			},
+		],
+
+		items: [
+			{
+				name: 'Kristina Dam Oak Table With White Marble Top',
+				price: '$ 799.55',
+				img: 'https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcTtUSQxtxt8d66gtjq9sOUt7LJ1u0xEQ4RLdlI957bLYWrXv6kp',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'Activate Facial Mask and Charcoal Soap ',
+				price: '$ 129.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'Vitra Cork Stool B, Cork - Design Within Reach',
+				price: '$ 299.99',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+			{
+				name: 'EAMES x Cast + Crew - Custom Powder Coated ',
+				price: '$ 799.55',
+				img: 'https://i.pinimg.com/564x/f1/68/e7/f168e7def06a71ebdb3c5508145d418d.jpg',
+			},
+		],
+	},
 };
