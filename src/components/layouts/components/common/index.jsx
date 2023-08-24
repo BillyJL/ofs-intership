@@ -1,4 +1,4 @@
-import Header from './components/Header/Header.jsx';
+import Header from './components/Header/index.jsx';
 import Footer from './components/Footer/index.jsx';
 import CookiePolicyModal from './components/CookiePolicyModal/index.jsx';
 
