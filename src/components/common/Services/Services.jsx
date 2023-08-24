@@ -1,6 +1,6 @@
 import './Services.scss';
 import { clientConfig } from '@config/client';
-import Slogan from './components/Slogan/Slogan';
+import Slogan from './components/Slogan';
 
 const Services = () => {
 	const { slogansList } = clientConfig;
