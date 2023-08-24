@@ -3,7 +3,7 @@ import {
 	PrevButton,
 	NextButton,
 	usePrevNextButtons,
-} from './components/ArrowButton/ArrowButton';
+} from './components/ArrowButton';
 import { clientConfig } from 'config/client';
 import Slide from './components/Slide/Slide';
 import './Slider.scss';
