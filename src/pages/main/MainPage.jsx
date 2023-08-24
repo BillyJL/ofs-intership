@@ -1,7 +1,7 @@
 import { withMainLayout } from 'components/layouts';
 import Services from 'components/common/Services';
 import Welcome from './components/Welcome/Welcome';
-import Banner from './components/Banner/Banner';
+import Banner from './components/Banner';
 import PopularItems from './components/PopularItems/PopularItems';
 import LatestPosts from '@components/common/LatestPosts';
 
