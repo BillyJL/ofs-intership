@@ -1,6 +1,6 @@
 import { withBreadcrumbsLayout } from 'components/layouts';
 import './CategoryPage.scss';
-import Filters from './components/Filters/Filters';
+import Filters from './components/Filters';
 import ItemsList from './components/ItemsList/ItemsList';
 import LatestPosts from 'components/common/LatestPosts';
 
