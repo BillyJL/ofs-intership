@@ -1,7 +1,7 @@
 import CategoryList from '@components/common/CategoryList';
 import Contacts from './components/contacts/Contact';
 import Copyright from './components/copyright/Copyright';
-import Icons from '../../../../../common/Icons/Icons';
+import Icons from '../../../../../common/Icons';
 import './Footer.scss'
 
 const Footer = () => {

@@ -1,4 +1,4 @@
-import Icons from 'components/common/Icons/Icons';
+import Icons from 'components/common/Icons';
 import './ProductDetails.scss';
 import DropdownImitation from './components/DropdownImitation';
 import QuantityCounter from './components/QuantityCounter';
