@@ -1,4 +1,4 @@
-import { DotButton, useDotButton } from './components/DotButton/DotButton';
+import { DotButton, useDotButton } from './components/DotButton';
 import { useCallback } from 'react';
 
 const Dots = ({ emblaApi }) => {
