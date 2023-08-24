@@ -1,4 +1,4 @@
-import Address from './components/address/Address';
+import Address from './components/Address';
 import './Contacts.scss';
 
 const Contacts = ({ className }) => {
