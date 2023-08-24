@@ -1,6 +1,8 @@
 import ImageGallery from 'react-image-gallery';
 import { clientConfig } from 'config/client';
 import './Product.scss';
+import ProductDetails from './components/ProductDetails';
+import Tabs from './components/Tabs';
 
 const Product = () => {
 	const {
@@ -19,8 +21,9 @@ const Product = () => {
 					disableKeyDown={true}
 					showNav={false}
 				/>
-				
+				<ProductDetails />
 			</div>
+			<Tabs />
 		</div>
 	);
 };

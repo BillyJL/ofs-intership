@@ -1,6 +1,5 @@
 @import '~react-image-gallery/styles/scss/image-gallery.scss';
 
-
 .image-gallery-thumbnail {
 	opacity: 0.5;
 }
@@ -18,34 +17,46 @@
 	bottom: auto;
 }
 
+.image-gallery-content.image-gallery-thumbnails-right,
+.image-gallery-slide,
+.image-gallery-image {
+	width: 100%;
+	height: auto;
+}
+
 .image-gallery-slide {
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
 }
 
 .image-gallery-icon {
-    color: #84bc22;
-    transition: all 0.3s ease-out;
-    appearance: none;
-    background-color: transparent;
-    border: 0;
-    cursor: pointer;
-    outline: none;
-    position: absolute;
-    z-index: 1;
-    filter: drop-shadow(0 2px 2px #1a1a1a);
+	color: #84bc22;
+	transition: all 0.3s ease-out;
+	appearance: none;
+	background-color: transparent;
+	border: 0;
+	cursor: pointer;
+	outline: none;
+	position: absolute;
+	z-index: 1;
+	filter: drop-shadow(0 2px 2px #1a1a1a);
 }
 
 .product {
 	margin-bottom: 20px;
-	border: 2px solid blue;
-	padding: 15px 55px 0 16px;
 	background-color: #fff;
+	display: flex;
+	flex-direction: column;
+	gap: 70px;
 
 	&-main {
-		display: flex;
-		gap: 70px;
+		padding: 15px 55px 0 16px;
+		display: grid;
+		grid-template-columns: 1.5fr 1fr;
+		grid-template-rows: 1fr;
+		grid-column-gap: 70px;
+		grid-row-gap: 0px;
 	}
 }
