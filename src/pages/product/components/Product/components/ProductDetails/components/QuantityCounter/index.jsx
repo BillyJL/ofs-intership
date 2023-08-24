@@ -1,7 +1,7 @@
 import { useProductDetails } from 'hooks/useProductDetails';
 import { cartSlice } from 'store/reducers/CartSlice';
 import { useDispatch } from 'react-redux';
-import Button from 'components/common/Button/Button';
+import Button from 'components/common/Button';
 import './QuantityCounter.scss';
 
 const QuantityCounter = () => {

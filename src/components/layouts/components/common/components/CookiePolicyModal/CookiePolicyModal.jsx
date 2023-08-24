@@ -1,4 +1,4 @@
-import Button from 'components/common/Button/Button';
+import Button from 'components/common/Button';
 import { useCookiePolicy } from 'hooks/useCookiePolicy';
 import './CookiePolicyModal.scss';
 

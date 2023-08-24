@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Button from 'components/common/Button/Button';
+import Button from 'components/common/Button';
 import { clientConfig } from 'config/client';
 import './ItemsList.scss';
 import Cards from 'components/common/Cards/Cards';

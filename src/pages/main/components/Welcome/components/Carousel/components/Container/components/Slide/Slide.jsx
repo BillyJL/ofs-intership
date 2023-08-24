@@ -1,4 +1,4 @@
-import Button from '@components/common/Button/Button';
+import Button from '@components/common/Button';
 import './Slide.scss';
 import { Link } from 'react-router-dom';
 

@@ -4,7 +4,7 @@ import Card from '@components/common/Card/Card';
 import Cards from '@components/common/Cards/Cards';
 import CardWithButton from './components/CardWithButton/CardWithButton';
 import Message from './components/Message/Message';
-import Button from 'components/common/Button/Button';
+import Button from 'components/common/Button';
 import './PopularItems.scss';
 
 const PopularItems = () => {
