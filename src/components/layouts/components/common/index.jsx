@@ -1,6 +1,6 @@
 import Header from './components/header/Header.jsx';
 import Footer from './components/footer/Footer.jsx';
-import CookiePolicyModal from './components/CookiePolicyModal/CookiePolicyModal.jsx';
+import CookiePolicyModal from './components/CookiePolicyModal/index.jsx';
 
 export const Layout = ({ children }) => {
 	return (
