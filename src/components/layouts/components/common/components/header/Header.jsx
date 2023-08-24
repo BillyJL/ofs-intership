@@ -1,7 +1,7 @@
-import Logo from './components/logo/Logo.jsx';
-import Navigation from './components/navigation/Navigation.jsx';
-import Dropdowns from './components/dropdowns/Dropdowns.jsx';
-import IconBar from './components/iconBar/IconBar.jsx';
+import Logo from './components/Logo/Logo.jsx';
+import Navigation from './components/Navigation/Navigation.jsx';
+import Dropdowns from './components/Dropdowns/index.jsx';
+import IconBar from './components/IconBar/IconBar.jsx';
 import { Link } from 'react-router-dom';
 
 import './Header.scss'
