@@ -1,5 +1,5 @@
-import Header from './components/header/Header.jsx';
-import Footer from './components/footer/Footer.jsx';
+import Header from './components/Header/Header.jsx';
+import Footer from './components/Footer/index.jsx';
 import CookiePolicyModal from './components/CookiePolicyModal/index.jsx';
 
 export const Layout = ({ children }) => {
