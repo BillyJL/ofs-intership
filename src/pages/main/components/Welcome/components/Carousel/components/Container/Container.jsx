@@ -1,5 +1,5 @@
 import { clientConfig } from '@config/client';
-import Slide from './components/Slide/Slide';
+import Slide from './components/Slide';
 
 const Container = ({ emblaRef }) => {
 	const {
