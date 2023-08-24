@@ -1,0 +1,16 @@
+.read-more-text {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 10px;
+	position: relative;
+
+	.read-more-link {
+		color: #84bc22;
+		cursor: pointer;
+		display: block;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}

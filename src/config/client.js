@@ -269,5 +269,6 @@ export const clientConfig = {
 				originalHeight: '570px',
 			},
 		],
+		text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas',
 	},
 };
