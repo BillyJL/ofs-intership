@@ -1,5 +1,5 @@
 import { withMainLayout } from 'components/layouts';
-import Services from 'components/common/Services/Services';
+import Services from 'components/common/Services';
 import Welcome from './components/Welcome/Welcome';
 import Banner from './components/Banner/Banner';
 import PopularItems from './components/PopularItems/PopularItems';
