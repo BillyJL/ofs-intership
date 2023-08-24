@@ -1,5 +1,5 @@
 import Carousel from './components/Carousel/Carousel';
-import Banner from './components/Banner/Banner';
+import Banner from './components/Banner';
 import './Welcome.scss';
 
 const Welcome = () => {
