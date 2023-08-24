@@ -1,6 +1,6 @@
 import CategoryList from '@components/common/CategoryList';
 import Contacts from './components/Contact';
-import Copyright from './components/Copyright/Copyright';
+import Copyright from './components/Copyright';
 import Icons from '../../../../../common/Icons';
 import './Footer.scss'
 
