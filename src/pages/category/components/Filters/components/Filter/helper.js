@@ -1,5 +1,5 @@
 import ColorPickerPanel from "./components/ColorPickerPanel";
-import Dropdown from "./components/Dropdown/Dropdown";
+import Dropdown from "./components/Dropdown";
 
 export function selectFilter(type, options) {
 	switch(type) {
