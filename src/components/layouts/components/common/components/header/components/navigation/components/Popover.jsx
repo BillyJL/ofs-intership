@@ -1,4 +1,4 @@
-import CategoryList from "@components/common/categoryList/CategoryList";
+import CategoryList from "@components/common/CategoryList";
 import image from '@images/nav-photo.png';
 
 const Popover = () => {

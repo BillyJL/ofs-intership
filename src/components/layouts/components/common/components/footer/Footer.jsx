@@ -1,4 +1,4 @@
-import CategoryList from '@components/common/categoryList/CategoryList';
+import CategoryList from '@components/common/CategoryList';
 import Contacts from './components/contacts/Contact';
 import Copyright from './components/copyright/Copyright';
 import Icons from '../../../../../common/Icons/Icons';
