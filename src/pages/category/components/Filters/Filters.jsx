@@ -1,6 +1,6 @@
 import { clientConfig } from 'config/client';
 import './Filters.scss';
-import Filter from './components/Filter/Filter';
+import Filter from './components/Filter';
 
 const Filters = () => {
 	const {
