@@ -1,7 +1,7 @@
 import { withBreadcrumbsLayout } from 'components/layouts';
 import './CategoryPage.scss';
 import Filters from './components/Filters';
-import ItemsList from './components/ItemsList/ItemsList';
+import ItemsList from './components/ItemsList';
 import LatestPosts from 'components/common/LatestPosts';
 
 const CategoryPage = () => {
