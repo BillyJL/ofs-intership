@@ -1,4 +1,4 @@
-import Carousel from './components/Carousel/Carousel';
+import Carousel from './components/Carousel';
 import Banner from './components/Banner';
 import './Welcome.scss';
 
