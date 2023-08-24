@@ -1,4 +1,4 @@
-import Logo from './components/Logo/Logo.jsx';
+import Logo from './components/Logo/index.jsx';
 import Navigation from './components/Navigation/Navigation.jsx';
 import Dropdowns from './components/Dropdowns/index.jsx';
 import IconBar from './components/IconBar/index.jsx';
