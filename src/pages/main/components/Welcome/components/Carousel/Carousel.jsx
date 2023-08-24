@@ -1,6 +1,6 @@
 import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
-import Dots from './/components/Dots/Dots';
+import Dots from './components/Dots';
 import Container from './components/Container';
 import './Carousel.scss'
 
