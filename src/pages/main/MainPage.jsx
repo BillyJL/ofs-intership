@@ -3,7 +3,7 @@ import Services from 'components/common/Services/Services';
 import Welcome from './components/Welcome/Welcome';
 import Banner from './components/Banner/Banner';
 import PopularItems from './components/PopularItems/PopularItems';
-import LatestPosts from '@components/common/LatestPosts/LatestPosts';
+import LatestPosts from '@components/common/LatestPosts';
 
 const MainPage = () => {
 	return (
