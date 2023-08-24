@@ -1,7 +1,7 @@
 import MainPage from 'pages/main/MainPage';
-import NotFound from 'pages/NotFound/NotFound';
 import CategoryPage from 'pages/category/CategoryPage';
 import ProductPage from 'pages/product/ProductPage';
+import NotFoundPage from 'pages/notFound/NotFoundPage';
 
 export const routes = [
 	{
@@ -16,7 +16,7 @@ export const routes = [
 	},
 	{
 		path: '/product',
-		element: <NotFound />,
+		element: <NotFoundPage />,
 		breadcrumb: 'OFS Theme',
 	},
 	{
@@ -26,6 +26,6 @@ export const routes = [
 	},
 	{
 		path: '*',
-		element: <NotFound />,
+		element: <NotFoundPage />,
 	},
 ];

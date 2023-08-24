@@ -2,7 +2,7 @@ import { withBreadcrumbsLayout } from '@components/layouts';
 import { Link } from 'react-router-dom';
 import './NotFound.scss';
 
-const NotFound = () => {
+const NotFoundPage = () => {
 	return (
 		<div className="notfound">
 			<h1 className="div1">Oops!</h1>
@@ -34,4 +34,4 @@ const NotFound = () => {
 	);
 };
 
-export default withBreadcrumbsLayout(NotFound);
+export default withBreadcrumbsLayout(NotFoundPage);
