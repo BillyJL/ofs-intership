@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { usePopularItem } from 'hooks/usePopularItem';
 import Card from '@components/common/Card';
 import Cards from '@components/common/Cards';
-import CardWithButton from './components/CardWithButton/CardWithButton';
+import CardWithButton from './components/CardWithButton';
 import Message from './components/Message/Message';
 import Button from 'components/common/Button';
 import './PopularItems.scss';
