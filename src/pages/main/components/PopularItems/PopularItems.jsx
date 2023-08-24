@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { usePopularItem } from 'hooks/usePopularItem';
-import Card from '@components/common/Card/Card';
+import Card from '@components/common/Card';
 import Cards from '@components/common/Cards/Cards';
 import CardWithButton from './components/CardWithButton/CardWithButton';
 import Message from './components/Message/Message';
