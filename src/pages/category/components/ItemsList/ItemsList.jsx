@@ -2,7 +2,7 @@ import { useState } from 'react';
 import Button from 'components/common/Button';
 import { clientConfig } from 'config/client';
 import './ItemsList.scss';
-import Cards from 'components/common/Cards/Cards';
+import Cards from 'components/common/Cards';
 
 const ItemsList = () => {
 	const [isLoadedCards, setIsLoadedCards] = useState(false);

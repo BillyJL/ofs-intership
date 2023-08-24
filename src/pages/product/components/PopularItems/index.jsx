@@ -1,6 +1,6 @@
 import './PopularItems.scss';
 import { usePopularItem } from 'hooks/usePopularItem';
-import Cards from 'components/common/Cards/Cards';
+import Cards from 'components/common/Cards';
 
 const PopularItems = () => {
 	const { cardItems } = usePopularItem();
