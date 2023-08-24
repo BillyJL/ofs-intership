@@ -1,0 +1,35 @@
+.details {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+	&-price {
+		color: #45413e;
+		font-family: 'Lato';
+		font-size: 48px;
+		font-weight: 700;
+	}
+
+	&-choose {
+		display: flex;
+		flex-direction: column;
+		gap: 25px;
+
+		&-buttons {
+			display: flex;
+			gap: 25px;
+		}
+	}
+
+	&-social {
+		display: flex;
+		gap: 35px;
+		align-items: center;
+
+		span {
+			color: #45413e;
+			font-size: 16px;
+			opacity: 0.5;
+		}
+	}
+}
