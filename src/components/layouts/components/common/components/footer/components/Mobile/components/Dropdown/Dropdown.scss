@@ -1,0 +1,29 @@
+.footer-dropdown {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	.open-close {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.triangle {
+		width: 0;
+		height: 0;
+		border-left: 5px solid transparent;
+		border-right: 5px solid transparent;
+		display: inline-block;
+		transition: transform 0.3s ease-in-out;
+	
+		&.up {
+			border-bottom: 7px solid #45413e;
+			transform: rotate(180deg);
+		}
+	
+		&.down {
+			border-top: 7px solid #45413e;
+		}
+	}
+}
