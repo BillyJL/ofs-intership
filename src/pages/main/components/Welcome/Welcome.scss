@@ -7,7 +7,13 @@
 	grid-template-rows: 1fr;
 	grid-column-gap: 30px;
 	grid-row-gap: 0px;
+}
 
-	.div1 { grid-area: 1 / 1 / 2 / 2; }
-	.div2 { grid-area: 1 / 2 / 2 / 3; }
+@media (max-width: 990px) {
+	.welcome {
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr;
+		grid-column-gap: 0;
+		padding: 20px 15px;
+	}
 }
