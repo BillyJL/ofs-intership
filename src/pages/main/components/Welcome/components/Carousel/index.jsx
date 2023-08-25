@@ -9,7 +9,7 @@ const Carousel = () => {
 	const [emblaRef, emblaApi] = useEmblaCarousel(options, [Autoplay()]);
 
 	return (
-		<div className="carousel div1">
+		<div className="carousel">
 			<Container emblaRef={emblaRef} />
 			<Dots emblaApi={emblaApi} />
 		</div>
