@@ -279,4 +279,24 @@ export const clientConfig = {
 			],
 		},
 	},
+
+	footer: {
+		category: {
+			firstList: ['Alcohol', 'Art', 'Books', 'Drink', 'Electronics'],
+			secondList: [
+				'Home',
+				'Jewelry',
+				'Kids & Baby',
+				'Men`s Fashion',
+				'Mobile',
+				'Motocycles',
+				'Movies',
+				'Music',
+			],
+			thirdList: ['Sport', 'Toys', 'Travel', 'Women`s Fashion'],
+		},
+		about: {
+			fourthList: ['About Us', 'Delivery', 'Testimonials', 'Contact'],
+		},
+	},
 };
