@@ -1,8 +1,9 @@
-.banner {
+.banner-sales {
 	display: flex;
 	flex-direction: column;
 	gap: 15px;
 	align-items: center;
+	width: 20vw;
 
 	&-text {
 		display: flex;
@@ -51,5 +52,11 @@
 			background-size: cover;
 			margin-right: 5px;
 		}
+	}
+}
+
+@media (max-width: 990px) {
+	.banner-sales {
+		display: none;
 	}
 }
