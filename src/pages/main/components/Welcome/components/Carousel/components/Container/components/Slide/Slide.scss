@@ -7,10 +7,9 @@
 	.headline {
 		color: #ffffff;
 		font-family: 'Myriad Pro';
-		font-size: 48px;
+		font-size: max(4vw, 28px);
 		font-weight: 700;
 		margin-bottom: 80px;
-		max-width: 60%;
 	}
 
 	&-text {
@@ -35,6 +34,14 @@
 		&:hover {
 			background-color: #1e1d22;
 			opacity: 0.5;
+		}
+	}
+}
+
+@media (max-width: 550px) {
+	.slide {
+		&-text {
+			max-width: none;
 		}
 	}
 }
