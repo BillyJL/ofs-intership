@@ -1,10 +1,12 @@
 .banner {
 	position: relative;
+	background-color: #262a32;
 	&-content {
 		position: absolute;
 		top: 50%;
 		left: 50%;
 		transform: translate(-50%, -50%);
+		width: 100%;
 		display: flex;
 		flex-direction: column;
 		justify-items: center;
@@ -21,7 +23,6 @@
 			color: #ffffff;
 			font-family: 'Myriad Pro';
 			font-size: 14px;
-			max-width: 300px;
 			text-align: center;
 		}
 	}
@@ -29,5 +30,21 @@
 	&-image {
 		width: 100%;
 		z-index: -1;
+	}
+}
+
+@media (max-width: 900px) {
+	.banner {
+		&-content {
+			&-headline {
+				font-size: 30px;
+			}
+		}
+	}
+}
+
+@media (max-width: 770px) {
+	.banner {
+		background-color: #45413e; 
 	}
 }
