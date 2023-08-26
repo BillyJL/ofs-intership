@@ -27,14 +27,8 @@
 	}
 }
 
-@media (max-width: 770px) {
+@media (max-width: 990px) {
 	.footer {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-
-		.div1 {
-			margin-bottom: 20px;
-		}
+		padding: 0;
 	}
 }
