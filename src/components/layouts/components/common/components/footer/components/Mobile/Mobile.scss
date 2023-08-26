@@ -1,14 +1,7 @@
-.mobile {
+.footer-mobile {
 	display: none;
 	flex-direction: column;
 	gap: 20px;
-
-	&-content {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-		padding: 40px 70px 20px 60px;
-	}
 
 	.icon-wrapper {
 		display: flex;
@@ -20,13 +13,17 @@
 			display: flex;
 			justify-content: space-around;
 			background-color: #262a32;
-			width: 100%;
+			width: 100vw;
+			position: fixed;
+			bottom: 0;
+			z-index: 1000;
 		}
 	}
 }
 
 @media (max-width: 990px) {
-	.mobile {
+	.footer-mobile {
 		display: flex;
+		margin-bottom: 75px;
 	}
 }
