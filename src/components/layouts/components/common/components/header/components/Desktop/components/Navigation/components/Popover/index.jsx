@@ -1,8 +1,9 @@
 import CategoryList from "@components/common/CategoryList";
 import image from '@images/nav-photo.png';
+import { clientConfig } from "config/client";
 
 const Popover = () => {
-	const firstList = ['Accessories', 'Alcohol', 'Art', 'Books', 'Drink', 'Electronics', 'Flowers & Plants', 'Food']
+	const {header: {firstList, secondList, thirdList, fourthList}} = clientConfig;
 	return (
 		<>
 			<nav className="navigation-services">
@@ -13,16 +14,16 @@ const Popover = () => {
 				/>
 				<CategoryList
 					className="second-column"
-					listOfCategories={firstList}
+					listOfCategories={secondList}
 				/>
 				<CategoryList
 					className="third-column"
-					listOfCategories={firstList}
+					listOfCategories={thirdList}
 				/>
 				<h3 className="list-name second-name">sale</h3>
 				<CategoryList
 					className="fourth-column"
-					listOfCategories={firstList}
+					listOfCategories={fourthList}
 				/>
 				<img className="image" src={image} alt="img" />
 			</nav>
