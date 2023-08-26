@@ -26,7 +26,7 @@
 		display: inline-block;
 
 		img {
-			max-width: 100%;
+			width: max(100%, 25px);
 		}
 
 		span {
@@ -44,5 +44,11 @@
 			border-radius: 50%;
 			padding: 4px;
 		}
+	}
+}
+
+@media (max-width: 990px) {
+	.icon-bar {
+		display: none;
 	}
 }
