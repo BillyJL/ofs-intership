@@ -13,7 +13,7 @@ const Desktop = () => {
 		},
 	} = clientConfig;
 	return (
-		<div className="desktop">
+		<div className="footer-desktop">
 			<Copyright className="div1" />
 			<Contacts className="div5" />
 			<h3 className="column-name div2">Categories</h3>
