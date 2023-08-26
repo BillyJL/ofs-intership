@@ -4,7 +4,7 @@ import './Dropdown.scss';
 const Dropdown = ({ children, label, className }) => {
 	const [showChildren, setShowChildren] = useState(false);
 	return (
-		<div className={"footer-dropdown " + className}>
+		<div className={"main-dropdown " + className}>
 			<h3
 				onClick={() => setShowChildren(!showChildren)}
 				className="column-name open-close"

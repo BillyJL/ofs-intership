@@ -1,4 +1,4 @@
-.footer-dropdown {
+.main-dropdown {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -19,7 +19,6 @@
 	
 		&.up {
 			border-bottom: 7px solid #45413e;
-			transform: rotate(180deg);
 		}
 	
 		&.down {
