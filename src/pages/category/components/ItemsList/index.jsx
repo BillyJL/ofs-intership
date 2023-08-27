@@ -3,8 +3,10 @@ import Button from 'components/common/Button';
 import { clientConfig } from 'config/client';
 import './ItemsList.scss';
 import Cards from 'components/common/Cards';
+import { useItemList } from 'hooks/useItemList';
 
 const ItemsList = () => {
+	const {itemsToShow} = useItemList();
 	const [isLoadedCards, setIsLoadedCards] = useState(false);
 	const {
 		category: { items },
@@ -12,8 +14,8 @@ const ItemsList = () => {
 	return (
 		<div className="items-list">
 			<div className="items-wrapper">
-				<Cards items={items.slice(0, 16)} />
-				{isLoadedCards && <Cards items={items.slice(16)} />}
+				<Cards items={items.slice(0, itemsToShow)} />
+				{isLoadedCards && <Cards items={items.slice(itemsToShow)} />}
 			</div>
 			{isLoadedCards || (
 				<Button

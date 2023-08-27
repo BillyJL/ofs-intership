@@ -18,3 +18,11 @@
 		max-width: 125px;
 	}
 }
+
+@media (max-width: 990px) {
+	.items {
+		&-wrapper {
+			grid-template-columns: 1fr;
+		}
+	}
+}
