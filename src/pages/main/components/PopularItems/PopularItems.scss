@@ -22,31 +22,17 @@
 			font-weight: 800;
 		}
 	}
+}
 
-	.load {
-		position: relative;
-		width: 25%;
-		margin: 0 auto;
+@media (max-width: 990px) {
+	.popularItems {
+		padding: 50px 15px 45px 15px;
 
-		&::after {
-			content: "";
-			position: absolute;
-			top: 50%;
-			right: 50px;
-			transform: translateY(-50%);
-			background-image: url('../../../../assets/images/spiner_icon.png');
-			background-size: contain;
-			width: 20px;
-			height: 15px;
-		  }
-	}
-
-	.items {
-		&-wrapper {
-			display: grid;
-			grid-template-columns: repeat(4, 1fr);
-			column-gap: 30px;
-			row-gap: 30px;
+		.headline {
+			.line-text {
+				padding: 0 10px;
+				font-size: 18px;
+			}
 		}
 	}
 }

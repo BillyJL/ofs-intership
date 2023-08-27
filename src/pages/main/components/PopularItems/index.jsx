@@ -1,5 +1,6 @@
 import './PopularItems.scss';
 import Desktop from './components/Desktop';
+import Mobile from './components/Mobile';
 
 const PopularItems = () => {
 	
@@ -12,6 +13,7 @@ const PopularItems = () => {
 				<span class="line"></span>
 			</div>
 			<Desktop />
+			<Mobile />
 		</div>
 	);
 };
