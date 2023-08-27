@@ -88,3 +88,29 @@
 		grid-area: 3 / 2 / 4 / 3;
 	}
 }
+
+@media (max-width: 900px) {
+	.notfound {
+		margin: 0 15px 40px 15px;
+		padding: 20px 15px 30px 15px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.5fr 1fr 0.2fr 0.3fr;
+
+		h1 {
+			font-size: 80px;
+		}
+
+		.div1 {
+			grid-area: 1 / 1 / 2 / 2;
+		}
+		.div2 {
+			grid-area: 2 / 1 / 3 / 2;
+		}
+		.div3 {
+			grid-area: 3 / 1 / 4 / 2;
+		}
+		.div4 {
+			grid-area: 4 / 1 / 5 / 2;
+		}
+	}
+}
