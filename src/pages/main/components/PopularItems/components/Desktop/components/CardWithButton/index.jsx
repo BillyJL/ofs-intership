@@ -10,7 +10,7 @@ const CardWithButton = () => {
 	return (
 		<div className="button-card">
 			<div className="button-card-content">
-				<Link to="/product/pr1">
+				<Link to="/product/pr1" className='button-card-link'>
 					<img
 						className="button-card-image"
 						src={image}
