@@ -1,4 +1,37 @@
-@media (max-width: 900px) {
+.popular-desktop {
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+
+	.load {
+		position: relative;
+		width: 25%;
+		margin: 0 auto;
+	
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			right: 50px;
+			transform: translateY(-50%);
+			background-image: url('../../../../../../assets/images/spiner_icon.png');
+			background-size: contain;
+			width: 20px;
+			height: 15px;
+		}
+	}
+	
+	.items {
+		&-wrapper {
+			display: grid;
+			grid-template-columns: repeat(4, 1fr);
+			column-gap: 30px;
+			row-gap: 30px;
+		}
+	}
+}
+
+@media (max-width: 990px) {
 	.popular-desktop {
 		display: none;
 	}
