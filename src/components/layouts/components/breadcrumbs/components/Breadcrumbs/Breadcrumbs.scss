@@ -30,3 +30,22 @@
 		}
 	}
 }
+
+@media (max-width: 770px) {
+	.title {
+		padding: 25px 15px 15px 15px;
+		.breadcrumbs {
+			span {
+				font-size: 13px;
+			}
+		}
+
+		.headline {
+			&-text {
+				text-align: center;
+				font-size: 31px;
+				padding: 0 20px;
+			}
+		}
+	}
+}
