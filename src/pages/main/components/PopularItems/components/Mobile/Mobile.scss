@@ -1,0 +1,10 @@
+.popular-mobile {
+	display: none;
+}
+
+
+@media (max-width: 990px) {
+	.popular-mobile {
+		display: inline;
+	}
+}
