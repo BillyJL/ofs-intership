@@ -16,7 +16,7 @@ const Dropdown = ({ options }) => {
 				className={`dropdown-toggle ${isDropdownOpen ? 'open' : ''}`}
 				onClick={() => setIsDropdownOpen(!isDropdownOpen)}
 			>
-				{selectedOption || 'Select an option'}
+				{selectedOption || 'Select'}
 				<span className="triangle"></span>
 			</div>
 			{isDropdownOpen && (
