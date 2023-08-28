@@ -1,9 +1,11 @@
 import './PopularItems.scss';
 import { usePopularItem } from 'hooks/usePopularItem';
-import Cards from 'components/common/Cards';
+import Desktop from './components/Desktop';
+import Mobile from './components/Mobile';
 
 const PopularItems = () => {
 	const { cardItems } = usePopularItem();
+	const items = cardItems.slice(0, 4);
 	return (
 		<div className="popular-items">
 			<div class="headline">
@@ -11,9 +13,8 @@ const PopularItems = () => {
 				<span class="line-text">Popular Items</span>
 				<span class="line"></span>
 			</div>
-			<div className="items-wrapper">
-				<Cards items={cardItems.slice(0, 4)} />
-			</div>
+			<Desktop items={items} />
+			<Mobile items={items} />
 		</div>
 	)
 }
