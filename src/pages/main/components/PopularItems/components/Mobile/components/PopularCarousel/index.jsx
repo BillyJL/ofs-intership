@@ -4,8 +4,7 @@ import { usePopularItem } from 'hooks/usePopularItem';
 import Card from 'components/common/Card';
 import './PopularCarousel.scss';
 
-const PopularCarousel = (props) => {
-	const { options } = props;
+const PopularCarousel = ({ options }) => {
 	const [emblaRef, emblaApi] = useEmblaCarousel(options);
 	const { cardItems } = usePopularItem();
 	const popularItems = cardItems.slice(4);
