@@ -2,7 +2,7 @@ import CategoryList from 'components/common/CategoryList';
 import Address from '../common/Address';
 import Copyright from '../common/Copyright';
 import './Mobile.scss';
-import Dropdown from '../../../../../../../common/Dropdown';
+import Dropdown from '@components/common/Dropdown';
 import { clientConfig } from 'config/client';
 import Icons from 'components/common/Icons';
 import IconBar from 'components/common/IconBar';
