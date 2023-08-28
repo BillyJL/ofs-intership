@@ -11,7 +11,6 @@ const IconBar = () => {
 	const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
 	const { numberOfProducts } = useSelector((state) => state.cartReducer);
 	const { numberOfLiked } = useSelector((state) => state.likedReducer);
-	console.log(isLoginModalOpen);
 	return (
 		<ul className="icon-bar">
 			<li>
