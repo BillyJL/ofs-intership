@@ -9,13 +9,9 @@ import latestPost2 from '@images/latestPost2.png';
 import latestPost3 from '@images/latestPost3.png';
 import latestPost4 from '@images/latestPost4.png';
 import productImg1 from '@images/PG.10216885.JJ169XX.PZ.jpg';
-import productImg1Small from '@images/PG.10216885.JJ169XX.PZ-small.jpg';
 import productImg2 from '@images/PG.10216885.JJ169XX.BZ.jpg';
-import productImg2Small from '@images/PG.10216885.JJ169XX.BZ-small.jpg';
 import productImg3 from '@images/PG.10216885.JJ8UTXX.PZ.jpg';
-import productImg3Small from '@images/PG.10216885.JJ8UTXX.PZ-small.jpg';
 import productImg4 from '@images/PG.10216885.JJ8UTXX.BZ.jpg';
-import productImg4Small from '@images/PG.10216885.JJ8UTXX.BZ-small.jpg';
 
 export const clientConfig = {
 	slogansList: [
@@ -248,26 +244,10 @@ export const clientConfig = {
 	},
 	product: {
 		images: [
-			{
-				original: productImg1,
-				thumbnail: productImg1Small,
-				originalHeight: '570px',
-			},
-			{
-				original: productImg2,
-				thumbnail: productImg2Small,
-				originalHeight: '570px',
-			},
-			{
-				original: productImg3,
-				thumbnail: productImg3Small,
-				originalHeight: '570px',
-			},
-			{
-				original: productImg4,
-				thumbnail: productImg4Small,
-				originalHeight: '570px',
-			},
+			productImg1,
+			productImg2,
+			productImg3,
+			productImg4
 		],
 		text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas',
 		tabs: {
