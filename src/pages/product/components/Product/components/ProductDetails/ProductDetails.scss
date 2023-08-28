@@ -33,3 +33,15 @@
 		}
 	}
 }
+
+@media (max-width: 990px) {
+	.details {
+		padding: 10px;
+
+		&-choose {
+			&-buttons {
+				flex-direction: column;
+			}
+		}
+	}
+}
