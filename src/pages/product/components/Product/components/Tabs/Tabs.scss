@@ -46,3 +46,8 @@
 	gap: 20px;
 	column-gap: 80px;
 }
+@media (max-width: 990px) {
+	.tabs-container {
+		display: none;
+	}
+}
