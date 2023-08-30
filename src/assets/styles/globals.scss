@@ -1,22 +1,26 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;900&display=swap');
 
 * {
-    font-family: Lato, sans-serif;
-    margin: 0;
-    padding: 0;
+	font-family: Lato, sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-    padding-top: 77px;
-    background-color: #f1edea;
+	padding-top: 77px;
+	background-color: #f1edea;
 }
 
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 a {
-    text-decoration: none;
+	text-decoration: none;
+}
+
+img {
+	-webkit-user-drag: none;
 }
