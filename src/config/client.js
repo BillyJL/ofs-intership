@@ -243,19 +243,24 @@ export const clientConfig = {
 		],
 	},
 	product: {
-		images: [
-			productImg1,
-			productImg2,
-			productImg3,
-			productImg4
-		],
+		images: [productImg1, productImg2, productImg3, productImg4],
+		dropdown: {
+			colors: ['Dark grey', 'Light grey', 'Black', 'White', 'Blue'],
+			colorMap: {
+				'Dark grey': '#3d402f',
+				'Light grey': '#a7a9a5',
+				Black: '#000',
+				White: '#fff',
+				Blue: '#3498db',
+			},
+		},
 		text: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore Beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas',
 		tabs: {
 			tabTitles: ['Description', 'Additional Information', 'Reviews (3)'],
 			tabContents: [
 				'Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\nLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.\n Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ',
-				'Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\nLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.\n Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ',
-				'Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\nLorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.\n Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. ',
+				'Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
+				'It`s reviews Tab',
 			],
 		},
 	},

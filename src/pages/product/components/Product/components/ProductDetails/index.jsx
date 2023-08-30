@@ -1,6 +1,6 @@
 import Icons from 'components/common/Icons';
 import './ProductDetails.scss';
-import DropdownImitation from './components/DropdownImitation';
+import DropdownColors from './components/DropdownColors';
 import QuantityCounter from './components/QuantityCounter';
 import ReadMoreText from './components/ReadMoreText';
 import { clientConfig } from 'config/client';
@@ -13,7 +13,7 @@ const ProductDetails = () => {
 		<div className="details">
 			<h2 className="details-price">$ 299.99</h2>
 			<div className="details-choose">
-				<DropdownImitation />
+				<DropdownColors />
 				<QuantityCounter />
 			</div>
 			<ReadMoreText text={text} />
