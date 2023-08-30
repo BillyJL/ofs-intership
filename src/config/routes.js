@@ -1,7 +1,7 @@
-import MainPage from 'pages/main/MainPage';
-import CategoryPage from 'pages/category/CategoryPage';
-import ProductPage from 'pages/product/ProductPage';
-import NotFoundPage from 'pages/notFound/NotFoundPage';
+import MainPage from '@pages/main/MainPage';
+import CategoryPage from '@pages/category/CategoryPage';
+import ProductPage from '@pages/product/ProductPage';
+import NotFoundPage from '@pages/notFound/NotFoundPage';
 
 export const routes = [
 	{
