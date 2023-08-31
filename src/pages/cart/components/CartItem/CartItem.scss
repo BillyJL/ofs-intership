@@ -40,3 +40,11 @@
 		}
 	}
 }
+
+@media (max-width: 770px) {
+	.cart-item {
+		&-functionality {
+			width: 100%;
+		}
+	}
+}
