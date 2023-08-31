@@ -58,7 +58,8 @@ export const clientConfig = {
 	server: {
 		domain: process.env.REACT_APP_DOMAIN_URL,
 		endpoints: {
-			request: '/items',
+			items: '/items',
+			emails: '/emails',
 		},
 	},
 
