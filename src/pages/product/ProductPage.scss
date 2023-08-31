@@ -4,3 +4,8 @@
 	flex-direction: column;
 	gap: 55px;
 }
+
+body:has(div.wrapper-hide-other) footer,
+body:has(div.wrapper-hide-other) header {
+	display: none;
+}

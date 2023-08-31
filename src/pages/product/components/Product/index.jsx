@@ -3,8 +3,10 @@ import './Product.scss';
 import ProductDetails from './components/ProductDetails';
 import Tabs from './components/Tabs';
 import PhotoGallery from './components/PhotoGallery';
+import { useSelector } from 'react-redux';
 
 const Product = () => {
+	const { showingOtherStuff } = useSelector((state) => state.productReducer);
 	const {
 		product: { images },
 	} = clientConfig;
@@ -14,7 +16,7 @@ const Product = () => {
 				<PhotoGallery images={images} />
 				<ProductDetails />
 			</div>
-			<Tabs />
+			{showingOtherStuff && <Tabs />}
 		</div>
 	);
 };
