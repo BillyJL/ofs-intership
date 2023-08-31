@@ -1,0 +1,79 @@
+.cart {
+	margin: 55px;
+	background-color: #fff;
+
+	&-items {
+		padding: 100px;
+	}
+
+	hr {
+		height: 2px;
+		background-color: #e8e2d6;
+	}
+
+	&-options {
+		padding: 70px 100px 80px 100px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 0.2fr 0.8fr;
+		grid-column-gap: 150px;
+		grid-row-gap: 45px;
+
+		.coupon {
+			display: flex;
+			gap: 15px;
+
+			&-input {
+				padding: 10px 20px;
+				border: 2px solid #ddd;
+				border-radius: 25px;
+				font-size: 14px;
+				width: 60%;
+			}
+
+			&-button {
+				border: 2px solid #84bc22;
+				color: #84bc22;
+				width: 30%;
+			}
+		}
+
+		.buttons {
+			display: flex;
+			gap: 20px;
+
+			.update {
+				border: 2px solid #84bc22;
+				color: #84bc22;
+				width: 35%;
+			}
+
+			.proceed {
+				background-color: #84bc22;
+				width: 60%;
+			}
+		}
+
+		.total-calculation {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: 0.2fr 0.8fr 0.3fr;
+			grid-column-gap: 50px;
+			grid-row-gap: 35px;
+
+			fieldset {
+				border: none;
+			}
+		}
+
+		.div1 {
+			grid-area: 1 / 1 / 2 / 2;
+		}
+		.div2 {
+			grid-area: 1 / 2 / 2 / 3;
+		}
+		.div3 {
+			grid-area: 2 / 2 / 3 / 3;
+		}
+	}
+}
