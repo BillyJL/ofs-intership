@@ -1,11 +1,12 @@
 import { useState } from 'react';
 import './RadioButtons.scss';
 
-const RadioButtons = () => {
+const RadioButtons = ({ setCost }) => {
 	const [delivery, setDelivery] = useState(null);
 
-	const onOptionChange = (e) => {
+	const onOptionChange = (amount) => (e) => {
 		setDelivery(e.target.value);
+		setCost(amount);
 	};
 	return (
 		<fieldset>
@@ -14,16 +15,16 @@ const RadioButtons = () => {
 					type="radio"
 					value="FLAT_RATE"
 					checked={delivery === 'FLAT_RATE'}
-					onChange={onOptionChange}
+					onChange={onOptionChange(10)}
 				/>
-				<label>Flat Rate</label>
+				<label>Flat Rate <b>$10</b></label>
 			</div>
 			<div className="radio-button">
 				<input
 					type="radio"
 					value="FREE_SHIPPING"
 					checked={delivery === 'FREE_SHIPPING'}
-					onChange={onOptionChange}
+					onChange={onOptionChange(0)}
 				/>
 				<label>Free Shipping</label>
 			</div>
@@ -32,25 +33,25 @@ const RadioButtons = () => {
 					type="radio"
 					value="INTERNATIONAL"
 					checked={delivery === 'INTERNATIONAL'}
-					onChange={onOptionChange}
+					onChange={onOptionChange(60)}
 				/>
-				<label>International</label>
+				<label>International <b>$60</b></label>
 			</div>
 			<div className="radio-button">
 				<input
 					type="radio"
 					value="LOCAL_DELIVERY"
 					checked={delivery === 'LOCAL_DELIVERY'}
-					onChange={onOptionChange}
+					onChange={onOptionChange(5)}
 				/>
-				<label>Local Delivery</label>
+				<label>Local Delivery <b>$5</b></label>
 			</div>
 			<div className="radio-button">
 				<input
 					type="radio"
 					value="LOCAL_PICKUP"
 					checked={delivery === 'LOCAL_PICKUP'}
-					onChange={onOptionChange}
+					onChange={onOptionChange(0)}
 				/>
 				<label>Local Pickup (Free)</label>
 			</div>
