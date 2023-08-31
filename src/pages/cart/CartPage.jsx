@@ -3,12 +3,30 @@ import './CartPage.scss';
 import Button from 'components/common/Button';
 import RadioButtons from './components/RadioButtons';
 import CartItem from './components/CartItem';
+import { useCart } from 'hooks/useCart';
 
 const CartPage = () => {
+	const {
+		cartItems,
+		deliveryCost,
+		setDeliveryCost,
+		calculateTotalPrice,
+		changeQuantity,
+		deleteCartItem,
+	} = useCart();
+
 	return (
 		<div className="cart">
 			<ul className="cart-items">
-				<CartItem />
+				{cartItems.map((item, index) => (
+					<CartItem
+						key={index}
+						index={index}
+						{...item}
+						deleteCartItem={deleteCartItem}
+						changeQuantity={changeQuantity}
+					/>
+				))}
 			</ul>
 			<hr />
 			<div className="cart-options">
@@ -25,11 +43,11 @@ const CartPage = () => {
 				</div>
 				<div className="total-calculation div3">
 					<h4>cart subtotal:</h4>
-					<span>$3.489</span>
+					<span>${calculateTotalPrice()}</span>
 					<h3>SHIPPING AND HANDLING:</h3>
-					<RadioButtons />
+					<RadioButtons setCost={setDeliveryCost} />
 					<h3>Order Total:</h3>
-					<span>$3.489</span>
+					<span>${calculateTotalPrice() + deliveryCost}</span>
 				</div>
 			</div>
 		</div>
