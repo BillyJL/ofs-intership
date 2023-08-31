@@ -7,7 +7,7 @@ export const usePopularItem = () => {
 	const { server } = clientConfig;
 	const { request } = useHttp();
 
-	const serverUrl = `${server.domain}${server.endpoints.request}`;
+	const serverUrl = `${server.domain}${server.endpoints.items}`;
 	useEffect(() => {
 		request(serverUrl).then((response) => {
 			setCardItems(response);
