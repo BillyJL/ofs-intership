@@ -1,0 +1,12 @@
+.countdown-unit {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: max(10vw, 100px);
+}
+
+@media (max-width: 660px) {
+	.countdown-unit {
+		width: 40vw;
+	}
+}
