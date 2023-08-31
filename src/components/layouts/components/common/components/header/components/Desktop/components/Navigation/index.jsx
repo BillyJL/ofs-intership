@@ -1,5 +1,6 @@
 import './Navigation.scss';
 import Popover from './components/Popover';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
 
@@ -17,7 +18,7 @@ const Navigation = () => {
 					<a href="#">library</a>
 				</li>
 				<li className='navigation-bar-point'>
-					<a href="#">contact us</a>
+					<Link to="/countdown">contact us</Link>
 				</li>
 			</ul>
 		</nav>
