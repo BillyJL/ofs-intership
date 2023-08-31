@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useHttp } from './common/useHttp';
 import { clientConfig } from 'config/client';
+import { toast } from 'react-hot-toast';
 
 export const useCountdown = () => {
 	const { request } = useHttp();
@@ -17,13 +18,16 @@ export const useCountdown = () => {
 
 		try {
 			const data = { email };
-			const response = await request(
+			await request(
 				serverUrl,
 				'POST',
 				JSON.stringify(data),
 			);
+			setEmail('');
+			toast.success('Email has been sent')
+
 		} catch (error) {
-			console.log('An error occurred while sending the email');
+			toast.error('An error occurred while sending the email');
 		}
 	};
 
