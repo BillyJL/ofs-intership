@@ -5,6 +5,7 @@ import Countdown from './components/Countdown';
 import { useCountdown } from 'hooks/useCountdown';
 import { calculateTimeLeft } from './helper';
 import { clientConfig } from 'config/client';
+import { Toaster } from 'react-hot-toast';
 
 const CountdownPage = () => {
 	const { handleEmailChange, handleSubmit } = useCountdown();
@@ -51,6 +52,7 @@ const CountdownPage = () => {
 					<button className="send-button" type="submit">
 						{'>'}
 					</button>
+					<Toaster position="bottom-left" reverseOrder={false} />
 				</form>
 			</div>
 		</div>
