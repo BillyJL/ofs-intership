@@ -1,0 +1,12 @@
+.header-mobile {
+	display: none;
+	position: relative;
+	align-items: center;
+	justify-content: center;
+}
+
+@media (max-width: 800px) {
+	.header-mobile {
+		display: flex;
+	}
+}
