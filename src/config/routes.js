@@ -3,6 +3,7 @@ import CategoryPage from '@pages/category/CategoryPage';
 import ProductPage from '@pages/product/ProductPage';
 import NotFoundPage from '@pages/notFound/NotFoundPage';
 import CountDownPage from 'pages/countdown/CountdownPage';
+import CartPage from 'pages/cart/CartPage';
 
 export const routes = [
 	{
@@ -28,6 +29,11 @@ export const routes = [
 	{
 		path: '/countdown',
 		element: <CountDownPage />,
+	},
+	{
+		path: '/cart',
+		element: <CartPage />,
+		breadcrumb: "Shopping Cart",
 	},
 	{
 		path: '*',

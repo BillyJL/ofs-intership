@@ -6,6 +6,7 @@ import './IconBar.scss';
 import { useState } from 'react';
 import { useSelector } from 'react-redux';
 import LoginModal from './components/LoginModal';
+import { Link } from 'react-router-dom';
 
 const IconBar = () => {
 	const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
@@ -21,7 +22,11 @@ const IconBar = () => {
 			<li onClick={() => setIsLoginModalOpen(true)}>
 				<div className="icon-wrapper">
 					<img src={login} alt="login" />
-					{isLoginModalOpen && <LoginModal onClose={() => setIsLoginModalOpen(false)} />}
+					{isLoginModalOpen && (
+						<LoginModal
+							onClose={() => setIsLoginModalOpen(false)}
+						/>
+					)}
 				</div>
 			</li>
 			<li>
@@ -31,10 +36,12 @@ const IconBar = () => {
 				</div>
 			</li>
 			<li>
-				<div className="icon-wrapper">
-					<img src={cart} alt="cart" />
-					<span>{numberOfProducts}</span>
-				</div>
+				<Link to='/cart'>
+					<div className="icon-wrapper">
+						<img src={cart} alt="cart" />
+						<span>{numberOfProducts}</span>
+					</div>
+				</Link>
 			</li>
 		</ul>
 	);
