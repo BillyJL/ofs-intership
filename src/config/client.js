@@ -327,4 +327,26 @@ export const clientConfig = {
 			'Food',
 		],
 	},
+
+	countdown: {
+		targetDate: new Date('2023-09-01T00:00:00'),
+		time: [
+			{
+				measurement: 'days',
+				maxValue: 30,
+			},
+			{
+				measurement: 'hours',
+				maxValue: 24,
+			},
+			{
+				measurement: 'minutes',
+				maxValue: 60,
+			},
+			{
+				measurement: 'seconds',
+				maxValue: 60,
+			},
+		],
+	},
 };
